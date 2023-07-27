@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     height: 100%;
     background-image: url(../images/dist/headerBG.png);
     background-repeat: no-repeat;
@@ -33,6 +34,31 @@
     &__btn a {
         color: inherit;
     }
+    &__title{
+        position: relative;
+        color: #000;
+font-family: Montserrat;
+font-size: 80px;
+font-style: normal;
+font-weight: 600;
+line-height: 94px; /* 117.5% */
+text-transform: uppercase;
+    }
+   
+// &__title::before {
+//         content: '';
+//         display: block;
+//         position: absolute;
+//         top: 50%;
+//         left: 0; /* Изменим left на 0 для фонового изображения */
+//         transform: translateY(-50%);
+//         width: 20px; /* Ширина изображения звездочки */
+//         height: 20px; /* Высота изображения звездочки */
+//         background-image: url('../../images/dist/hader_title_stars.jpg');
+//         background-size: contain;
+//         background-repeat: no-repeat; /* Добавим свойство background-repeat */
+//         background-position: center; /* Чтобы изображение было позиционировано по центру */
+//     }
 }
 
 .menu {
@@ -62,6 +88,7 @@
         flex-shrink: 0;
         border: none;
         border-radius: 50%;
+        text-align: center;
 
 
     }
